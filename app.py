@@ -6,7 +6,8 @@ import discord
 
 
 # make TOKEN
-TOKEN = os.environ['DISCODE_TOKEN']
+# TOKEN = os.environ['DISCODE_TOKEN']
+TOKEN = "NzI3ODU0Mzg3MTg3Mjg2MDM3.Xvx5VQ.u4L3-zbbWuKCcaHAD51lZJ9fcIM"
 
 client = discord.Client()
 
@@ -42,7 +43,7 @@ async def on_message(message):
 			else:
 				send_message = 'たてましたぁ！ついでにさーばにはくるるんしか宿せないようにしておいたのでぇ、いーっぱいくるるんのぱぅわーを体験できますよぉ！たのしみですねぇ！'
 
-			send_message = "するひと１: " + str(p1.get_attribute("href")) + "\n" + "するひと２: " + str(p2.get_attribute("href")) + "\n" + "みるひと: " + str(watch.get_attribute("href")) + "\n" + send_message
+			send_message = "するひと１: " + p1 + "\n" + "するひと２: " + p2 + "\n" + "みるひと: " + watch + "\n" + send_message
 
 			await message.channel.send(send_message)
 
