@@ -27,9 +27,9 @@ async def on_message(message):
 
 			await message.channel.send(send_message)
 
-		    api_url = 'https://furuyoni-simulator.herokuapp.com/tables.create'
+			api_url = "https://furuyoni-simulator.herokuapp.com/tables.create"
 
-		    res = requests.post(api_url).json()
+			res = requests.post(api_url).json()
 
 			p1 = res['p1Url']
 			p2 = res['p2Url']
