@@ -53,3 +53,4 @@ if __name__ == "__main__":
 	app.run(TOKEN)
 
 
+heroku ps:scale web=1
