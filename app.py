@@ -1,10 +1,12 @@
+import os
 import re
 import random
 import requests
 import discord
 
+
 # make TOKEN
-TOKEN = "TOKEN"
+TOKEN = os.environ['DISCODE_TOKEN']
 
 client = discord.Client()
 
