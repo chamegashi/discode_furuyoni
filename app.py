@@ -6,8 +6,7 @@ import discord
 
 
 # make TOKEN
-# TOKEN = os.environ['DISCODE_TOKEN']
-TOKEN = "NzI3ODU0Mzg3MTg3Mjg2MDM3.Xvx5VQ.u4L3-zbbWuKCcaHAD51lZJ9fcIM"
+TOKEN = os.environ['DISCODE_TOKEN']
 
 client = discord.Client()
 
