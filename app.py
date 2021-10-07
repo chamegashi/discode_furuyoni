@@ -10,7 +10,7 @@ TOKEN = os.environ['DISCODE_TOKEN']
 
 app = discord.Client()
 
-@client.event
+@app.event
 async def on_message(message):
 	if (re.findall('立てて|たてて|作って|つくって|作成|さくせい', message.content) != []):
 		if (re.findall('くるる|クルル', message.content) != []):
