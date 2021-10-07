@@ -8,7 +8,7 @@ import discord
 # make TOKEN
 TOKEN = os.environ['DISCODE_TOKEN']
 
-client = discord.Client()
+app = discord.Client()
 
 @client.event
 async def on_message(message):
@@ -48,4 +48,8 @@ async def on_message(message):
 
 
 print("start server")
-client.run(TOKEN)
+
+if __name__ == "__main__":
+	app.run(TOKEN)
+
+
